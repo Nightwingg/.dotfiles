@@ -1,0 +1,33 @@
+snippet template "basical template" i 
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define mod (int)(1e9+7)
+
+
+int main(){
+  ios::sync_with_stdio(0);
+  cin.tie(0);
+	int t;
+	cin>>t;
+	int a[t];
+  for(int i=0; i<t;i++){
+		cin>>a[i];
+	}
+	${1:doit}
+}
+endsnippet
+
+snippet for "for template"
+for (int ${1:i} = 0; $1 < ${2:count}; $1${3:++}) {
+	${4:func}
+}
+endsnippet
+
+snippet if "if"
+if (${1:condition}){
+	${2:true statement}
+}else{
+	${3:false statement}
+}
+endsnippet

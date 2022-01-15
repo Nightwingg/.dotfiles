@@ -1,0 +1,19 @@
+snippet template "basical template" i 
+---
+title: $1
+author: 
+  - Luis Zúñiga
+output: 
+  html_document:
+    toc: true
+    keep_tex: true
+---
+$2
+endsnippet
+
+snippet chk "rmd chunk" i
+\`\`\`{r ${1:chunkName}, echo=FALSE, message=FALSE}
+${2:code}
+
+\`\`\`
+endsnippet

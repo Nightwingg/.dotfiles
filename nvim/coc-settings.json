@@ -1,0 +1,17 @@
+{
+	"disableDiagnostics": true, 
+	"python.runLinting": false,
+	"python.linting.enabled":false,
+	"diagnostic.enable": false,
+	"r.lsp.path": "/usr/bin/R"
+	"r.lsp.debug": true,
+	"r.lsp.trace.server":"verbose",
+	"r.lsp.filetypes":["R", "r", "Rmd", "rmd"], 
+	"suggest.maxCompleteItemCount" : 15,
+	"python.linting.pydocstyleEnabled":false,
+	"suggest.floatEnable": false,
+	"python.suggest.floatEnable": false,
+  "signature.enable": false}
+}
+
+
