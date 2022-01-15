@@ -98,7 +98,7 @@ set fileencoding=utf-8
 set hidden
 
 " cut, copy and paste
-set clipboard=unnamed
+set clipboard=unnamedplus
 set hlsearch
 vnoremap <C-c> "+y
 vnoremap <C-x> "+d
