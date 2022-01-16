@@ -86,6 +86,7 @@ nnoremap <leader>w :w<cr>
 "nnoremap <leader>q :bd<cr>
 nnoremap <leader>q :bp\|bd #<CR>
 nnoremap <leader>Q :qa!<cr>
+nnoremap Q :qa!<cr>
 inoremap jj <ESC>
 tnoremap jj <C-\><C-n>
 nnoremap <ESC> :noh<CR><ESC>
@@ -291,7 +292,7 @@ autocmd FileType markdown nmap cc v<Plug>(textobj-markdown-py-i)y
 autocmd FileType markdown nmap cc v<Plug>(textobj-markdown-py-i)y
 
 " Preview
-"let g:fzf_layout = { 'down': '30%' }
+let g:fzf_layout = { 'down': '30%' }
 command! -bang -nargs=? -complete=dir Files
       \ call fzf#vim#files(<q-args>, {'options': ['--layout=reverse', '--info=inline', '--preview', 'head {}']}, <bang>0)
 command! -bang -nargs=? -complete=dir GFiles
