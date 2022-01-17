@@ -27,7 +27,7 @@ font pango:Noto Sans Regular 12
 
 # set the mod key to the winkey:
 set $mod Mod1
-
+focus_follows_mouse no
 #####################
 # workspace layout: #
 #####################
