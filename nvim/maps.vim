@@ -35,11 +35,11 @@ nnoremap <leader>sh <C-w><C-h>
 nnoremap <leader>sl <C-w><C-l>
 nnoremap <leader>sk <C-w><C-k>
 nnoremap <M-w> <C-w>w
-tnoremap <leader>sj <C-\><C-n><C-w><C-j>
-tnoremap <leader>sh <C-\><C-n><C-w><C-h>
-tnoremap <leader>sl <C-\><C-n><C-w><C-l>
-tnoremap <leader>sk <C-\><C-n><C-w><C-k>
-tnoremap <leader>q <C-\><C-n>:bd!<CR>
+"tnoremap <leader>sj <C-\><C-n><C-w><C-j>
+"tnoremap <leader>sh <C-\><C-n><C-w><C-h>
+"tnoremap <leader>sl <C-\><C-n><C-w><C-l>
+"tnoremap <leader>sk <C-\><C-n><C-w><C-k>
+"tnoremap <leader>q <C-\><C-n>:bd!<CR>
 
 " Splits
 nmap <leader>ss :split <bar> <C-w>w <CR>
