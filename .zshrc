@@ -5,6 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -35,7 +36,6 @@ alias radian="~/.local/bin/radian"
 alias ipython="~/.local/bin/ipython"
 alias xclip="xclip -selection clipboard -i"
 alias pdf="okular"
-export EDITOR=nvim;
 cpwd(){
   pwd=$(pwd)
   echo "cd" $pwd | xclip
@@ -47,4 +47,9 @@ bindkey '^ ' autosuggest-accept
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
-neofetch
+
+# Remove user from bash and title
+export DEFAULT_USER="$(whoami)"
+export ZSH_THEME_TERM_TITLE_IDLE="bash: %~"
+
+colorscript random
