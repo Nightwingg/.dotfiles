@@ -36,6 +36,7 @@ alias radian="~/.local/bin/radian"
 alias ipython="~/.local/bin/ipython"
 alias xclip="xclip -selection clipboard -i"
 alias pdf="okular"
+alias logout="i3-msg exit"
 cpwd(){
   pwd=$(pwd)
   echo "cd" $pwd | xclip
