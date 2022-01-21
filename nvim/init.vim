@@ -30,6 +30,9 @@ set mouse=a
  "set shellxquote=
  "let &shellpipe='2>&1| tee'
 "endif
+"
+" Alias
+let $BASH_ENV = "~/.bash_aliases"
 
 " colors
 syntax on

@@ -1,7 +1,7 @@
 " Move between buffers
 map <leader><Tab> :bnext<CR>
 map <leader><S-Tab> :bprevious<CR>
-"
+
 " Varios
 nnoremap <leader>v :e $MYVIMRC<cr>
 nnoremap <leader>w :w<cr>
@@ -92,11 +92,11 @@ augroup compileandrun
     autocmd filetype python nnoremap <leader>xy :vnew term:// -c 'python3 %'<CR>a
     "autocmd filetype python nnoremap <leader>xy :vertical terminal pypy3 % <CR> 
     autocmd filetype rmd nnoremap <f6> :w <bar> !Rscript -e "rmarkdown::render('%')" <CR> i
-  autocmd filetype cpp nnoremap <leader>xx :w <bar> !g++ -std=c++14 -O2 -Wall %<CR>
+  autocmd filetype cpp nnoremap <leader>xx :w <bar> !g++ -std=c++17 -O2 -Wall %<CR>
   autocmd filetype cpp nnoremap <leader>xy :!cmd.exe /C "start "" cmd /c ""a.exe ^& echo. ^& pause"""<CR> 
   " https://stackoverflow.com/questions/34698230/how-to-run-multiple-commands-via-start-command/34698365
-  autocmd filetype cpp nnoremap <leader>xv :vnew term:// -c './a.exe' <cr>a
-  autocmd filetype cpp nnoremap <leader>xh :new <bar> :resize17 term//powershell.exe -c "a.exe" <cr>a
+  autocmd filetype cpp nnoremap <leader>xv :vnew term://zsh -c './a.out' <cr>a
+  autocmd filetype cpp nnoremap <leader>xh :new <bar> resize10 <bar> term ./a.out <cr>a
   " Horizontal
     autocmd filetype python nnoremap <leader>xv :vnew term://zsh -c 'python3 %'<CR>a
     autocmd filetype python nnoremap <leader>xs :vertical terminal pypy3 % <CR> 

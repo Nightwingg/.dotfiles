@@ -1,1 +1,1 @@
-.profile
+/home/nightwingg/.profile

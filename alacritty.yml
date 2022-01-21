@@ -5,7 +5,7 @@ items:
       name: 3024 (dark)
       author: Chris Kempson
       primary:
-        background: "#090300"
+        background: "#282828"
         foreground: "#a5a2a2"
       cursor:
         text: "#090300"
@@ -65,7 +65,7 @@ theme: Gruvbox-Dark
 background_opacity: 1
 font:
 # Normal (roman) font face
-  size: 13
+  size: 15
   #size: 22 #xfce
   normal:
     family: "FiraCode Nerd Font"

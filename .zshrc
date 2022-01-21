@@ -37,6 +37,7 @@ alias ipython="~/.local/bin/ipython"
 alias xclip="xclip -selection clipboard -i"
 alias pdf="okular"
 alias logout="i3-msg exit"
+alias th="trash"
 cpwd(){
   pwd=$(pwd)
   echo "cd" $pwd | xclip
