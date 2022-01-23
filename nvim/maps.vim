@@ -68,10 +68,11 @@ nnoremap <C-b> :NERDTreeToggle<CR>
 imap <C-l> <Plug>(coc-snippets-expand)
 nmap <silent> gd <Plug>(coc-definition)
 nnoremap <silent><nowait> <space>o :<C-u>CocList -I symbols<cr>
-nmap <leader>sd :CocDiagnostic<cr>
+nmap <leader>sd :copen<CR>
 
 " Format code
-nmap <leader>kf :ALEFix<CR> 
+"nmap <leader>kf :call CocAction('format')<CR>
+nmap <leader>kf :ALEFix<CR>
 
 " Run Files
 autocmd filetype python nmap sf :let @+='%run '.expand('%')<CR>

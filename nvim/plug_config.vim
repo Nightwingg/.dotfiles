@@ -22,10 +22,11 @@ let g:ale_python_mypy_options = '--ignore-missing-imports'
 let g:ale_disable_lsp = 1
 
 " Ale
-let g:ale_enabled = 0
+let g:ale_enabled = 1
 let g:ale_set_loclist = 0
 let g:ale_set_quickfix = 1
-let g:ale_open_list = 1
+let g:ale_open_list = 0
+let g:ale_set_highlights = 0
 let g:ale_fixers = {'r': ['styler'], 
       \  'python':['black'],
       \  'cpp':['clang-format'],
@@ -69,7 +70,7 @@ call textobj#user#plugin('markdown', {
 \ })
 
 " Preview
-let g:fzf_layout = { 'down': '30%' }
+"let g:fzf_layout = { 'down': '30%' }
 command! -bang -nargs=? -complete=dir Files
       \ call fzf#vim#files(<q-args>, {'options': ['--layout=reverse', '--info=inline', '--preview', 'head {}']}, <bang>0)
 command! -bang -nargs=? -complete=dir GFiles

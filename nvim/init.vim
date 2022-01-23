@@ -1,14 +1,14 @@
-call plug#begin('~/AppData/local/nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
   Plug 'junegunn/fzf', {'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
   Plug 'scrooloose/nerdtree'
   Plug 'scrooloose/nerdcommenter'
   Plug 'SirVer/ultisnips'
-  Plug 'dense-analysis/ale'
   Plug 'scrooloose/nerdcommenter'
   Plug 'mg979/vim-visual-multi', {'branch': 'master'}
   Plug 'godlygeek/tabular', {'for': 'markdown'}
   Plug 'sheerun/vim-polyglot'
+  Plug 'dense-analysis/ale'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'michaeljsmith/vim-indent-object'
   Plug 'vim-pandoc/vim-pandoc'
@@ -114,7 +114,9 @@ au BufNewFile,BufRead *.py
   \ set softtabstop=4 | 
   \ set shiftwidth=4 |
   \ set expandtab |
-  \ set nospell
+  \ set nospell |
+autocmd FileType python let b:coc_suggest_disable = 1
+autocmd FileType py let b:coc_suggest_disable = 1
 
 " Imports "{{{
 " ---------------------------------------------------------------------

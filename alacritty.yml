@@ -65,8 +65,8 @@ theme: Gruvbox-Dark
 background_opacity: 1
 font:
 # Normal (roman) font face
-  size: 15
-  #size: 22 #xfce
+  #size: 15
+  size: 22 #xfce
   normal:
     family: "FiraCode Nerd Font"
 
@@ -210,3 +210,11 @@ key_bindings:
 # Print all received window events.
 #print_events: false
 #
+shell:
+  program: /usr/bin/tmux # <- set this to the path of your tmux installation
+  args:
+    - new-session
+    - -A
+    - -D
+    - -s
+    - main
