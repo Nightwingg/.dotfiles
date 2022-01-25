@@ -19,10 +19,11 @@ call plug#end()
 
 " Mouse 
 set mouse=a
-"" Terminal
+"set shellcmdflag=-ic
+" Terminal
 "let $TMP="/tmp"
 "if has("win32")
-"let &shell='powershell.exe'
+"let &shell='bash'
  "let &shellcmdflag = '-c'
  "let &shellredir = '>%s 2>&1'
  "set shellquote= shellxescape=
@@ -30,9 +31,7 @@ set mouse=a
  "set shellxquote=
  "let &shellpipe='2>&1| tee'
 "endif
-"
-" Alias
-let $BASH_ENV = "~/.bash_aliases"
+
 
 " colors
 syntax on

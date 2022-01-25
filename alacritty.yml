@@ -62,13 +62,13 @@ colors:
   transparent_background_colors: true
 theme: Gruvbox-Dark
 
-background_opacity: 1
 font:
 # Normal (roman) font face
-  #size: 15
+  #size: 12
   size: 22 #xfce
   normal:
-    family: "FiraCode Nerd Font"
+    family: FiraCode NF
+    style: Medium
 
 window:
   dimensions:
@@ -79,7 +79,7 @@ window:
     x: 50
     y: 80
 
-  opacity: 0.0
+  opacity: 1.0
 
 
 key_bindings:
@@ -210,11 +210,11 @@ key_bindings:
 # Print all received window events.
 #print_events: false
 #
-shell:
-  program: /usr/bin/tmux # <- set this to the path of your tmux installation
-  args:
-    - new-session
-    - -A
-    - -D
-    - -s
-    - main
+#shell:
+  #program: /usr/bin/tmux # <- set this to the path of your tmux installation
+  #args:
+    #- new-session
+    #- -A
+    #- -D
+    #- -s
+    #- main

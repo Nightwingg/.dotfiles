@@ -1,8 +1,9 @@
 # tmux start
-#if [ -z "$TMUX" ]
-#then
+if [ -z "$TMUX" ]
+then
     #tmux kill-server && tmux
-#fi
+    tmux new-session
+fi
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -36,20 +37,6 @@ source ~/.dotfiles/zsh-z.plugin.zsh
 # Activate FZF shortcuts
 source /usr/share/fzf/completion.zsh && source /usr/share/fzf/key-bindings.zsh
 
-alias v="nvim"
-alias ls="lsd"
-alias radian="~/.local/bin/radian"
-alias ipython="~/.local/bin/ipython"
-alias xclip="xclip -selection clipboard -i"
-alias logout="i3-msg exit"
-alias alty="alacritty &|" # | is only for zsh, in bash use disown %1
-alias th="trash"
-alias pdf="zathura --fork"
-cpwd(){
-  pwd=$(pwd)
-  echo "cd" $pwd | xclip
-}
-
 # keys
 bindkey '^ ' autosuggest-accept
 
@@ -57,8 +44,13 @@ bindkey '^ ' autosuggest-accept
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
+# Alias
+source ~/.bash_aliases
+
+
 # Remove user from bash and title
 export DEFAULT_USER="$(whoami)"
 export ZSH_THEME_TERM_TITLE_IDLE="bash: %~"
 
 colorscript random
+

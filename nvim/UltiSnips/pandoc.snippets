@@ -1,0 +1,22 @@
+snippet title "title" i
+---
+title:  ${1:title}
+subtitle: ${2:subtitle}
+author:
+- ${3:author}
+output: 
+  html_document:
+    toc: true
+    keep_tex: true
+---
+
+${4:body}
+endsnippet
+
+
+snippet chk "md chunk" i
+\`\`\`${1:lang}
+${2:code}
+
+\`\`\`
+endsnippet
